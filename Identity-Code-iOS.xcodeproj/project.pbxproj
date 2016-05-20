@@ -12,7 +12,32 @@
 		021A03E71CEF79450076FA20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021A03E51CEF79450076FA20 /* Main.storyboard */; };
 		021A03E91CEF79450076FA20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021A03E81CEF79450076FA20 /* Assets.xcassets */; };
 		021A03EC1CEF79450076FA20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021A03EA1CEF79450076FA20 /* LaunchScreen.storyboard */; };
+		027ADCE71CEF831A00776CEE /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE31CEF831A00776CEE /* AWSCognito.framework */; };
+		027ADCE81CEF831A00776CEE /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE31CEF831A00776CEE /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		027ADCE91CEF831A00776CEE /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE41CEF831A00776CEE /* AWSCognitoIdentityProvider.framework */; };
+		027ADCEA1CEF831A00776CEE /* AWSCognitoIdentityProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE41CEF831A00776CEE /* AWSCognitoIdentityProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		027ADCEB1CEF831A00776CEE /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE51CEF831A00776CEE /* AWSCore.framework */; };
+		027ADCEC1CEF831A00776CEE /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE51CEF831A00776CEE /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		027ADCED1CEF831A00776CEE /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE61CEF831A00776CEE /* AWSS3.framework */; };
+		027ADCEE1CEF831A00776CEE /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 027ADCE61CEF831A00776CEE /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		027ADCEF1CEF831A00776CEE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				027ADCEE1CEF831A00776CEE /* AWSS3.framework in Embed Frameworks */,
+				027ADCE81CEF831A00776CEE /* AWSCognito.framework in Embed Frameworks */,
+				027ADCEA1CEF831A00776CEE /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
+				027ADCEC1CEF831A00776CEE /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		021A03DE1CEF79440076FA20 /* Identity-Code-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Identity-Code-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +47,10 @@
 		021A03E81CEF79450076FA20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021A03EB1CEF79450076FA20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021A03ED1CEF79450076FA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027ADCE31CEF831A00776CEE /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		027ADCE41CEF831A00776CEE /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
+		027ADCE51CEF831A00776CEE /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		027ADCE61CEF831A00776CEE /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027ADCED1CEF831A00776CEE /* AWSS3.framework in Frameworks */,
+				027ADCE71CEF831A00776CEE /* AWSCognito.framework in Frameworks */,
+				027ADCE91CEF831A00776CEE /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				027ADCEB1CEF831A00776CEE /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +71,10 @@
 		021A03D51CEF79440076FA20 = {
 			isa = PBXGroup;
 			children = (
+				027ADCE31CEF831A00776CEE /* AWSCognito.framework */,
+				027ADCE41CEF831A00776CEE /* AWSCognitoIdentityProvider.framework */,
+				027ADCE51CEF831A00776CEE /* AWSCore.framework */,
+				027ADCE61CEF831A00776CEE /* AWSS3.framework */,
 				021A03E01CEF79450076FA20 /* Identity-Code-iOS */,
 				021A03DF1CEF79440076FA20 /* Products */,
 			);
@@ -74,6 +111,8 @@
 				021A03DA1CEF79440076FA20 /* Sources */,
 				021A03DB1CEF79440076FA20 /* Frameworks */,
 				021A03DC1CEF79440076FA20 /* Resources */,
+				027ADCEF1CEF831A00776CEE /* Embed Frameworks */,
+				027ADCF01CEF834000776CEE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +168,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		027ADCF01CEF834000776CEE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		021A03DA1CEF79440076FA20 /* Sources */ = {
@@ -251,6 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Identity-Code-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jeetendra.Identity-Code-iOS";
@@ -262,6 +321,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Identity-Code-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jeetendra.Identity-Code-iOS";
@@ -288,6 +351,7 @@
 				021A03F21CEF79450076FA20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
